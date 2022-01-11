@@ -30,7 +30,9 @@ import java.util.ArrayList;
 import java.util.Calendar;
 import java.util.HashMap;
 import java.util.Map;
-
+/**
+ * To show Covid details for Selected Country.
+ */
 public class CountryCovidData extends AppCompatActivity {
     ArrayList<CovidData> covidDataArrayList = new ArrayList<CovidData>();
     GridView covidDataGridView;
@@ -68,7 +70,9 @@ public class CountryCovidData extends AppCompatActivity {
         Glide.with(CountryCovidData.this).load(url).into(flagImage);
         covidDataGridView = findViewById(R.id.countryDataGridViewLayout);
     }
-
+    /**
+     * To fetch the Country Covid details from given API.
+     */
     private void getCountryData() {
         String url = "https://covid-19-data.p.rapidapi.com/country/code?code=" + countryCode;
         StringRequest request = new StringRequest(Request.Method.GET, url,

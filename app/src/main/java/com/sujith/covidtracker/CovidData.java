@@ -1,5 +1,7 @@
 package com.sujith.covidtracker;
-
+/**
+ * To initialize Country Covid details.
+ */
 public class CovidData {
 
     private String CountryName;

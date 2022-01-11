@@ -16,7 +16,9 @@ import com.bumptech.glide.Glide;
 
 import java.util.ArrayList;
 import java.util.List;
-
+/**
+ * To hold CountriesList.
+ */
 public class CountryDataAdapter extends ArrayAdapter<CountryData> {
     private String code;
     private Context context;

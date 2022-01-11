@@ -32,9 +32,11 @@ import java.util.ArrayList;
 import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
-
+/**
+ * To Display Countries List.
+ */
 public class MainActivity extends AppCompatActivity {
-
+    private StringRequest request;
     EditText edtSearch;
     ListView listView;
     SimpleArcLoader simpleArcLoader;
@@ -85,8 +87,9 @@ public class MainActivity extends AppCompatActivity {
         return super.onOptionsItemSelected(item);
     }
 
-    StringRequest request;
-
+    /**
+     * To fetch the Countries List from given API.
+     */
     private void fetchData() {
         String url = "https://covid-19-data.p.rapidapi.com/help/countries";
         simpleArcLoader.start();
@@ -133,7 +136,9 @@ public class MainActivity extends AppCompatActivity {
         };
         requestQueuedata();
     }
-
+    /**
+     * To add the Volley request to RequestQueue.
+     */
     private void requestQueuedata() {
         RequestQueue requestQueue = Volley.newRequestQueue(this);
         requestQueue.add(request);

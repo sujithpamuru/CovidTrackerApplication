@@ -11,7 +11,9 @@ import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
 
 import java.util.ArrayList;
-
+/**
+ * To hold Covid details for Selected Country.
+ */
 class CountryCovidDataAdapter extends ArrayAdapter<CovidData> {
     public CountryCovidDataAdapter(@NonNull Context context, ArrayList<CovidData> covidDataArrayList) {
         super(context, 0, covidDataArrayList);
